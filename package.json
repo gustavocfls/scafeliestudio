@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/gustavocfls/scafeliestudio#readme",
   "dependencies": {
+    "bootstrap": "^4.5.3",
+    "formik": "^2.2.5",
     "next": "^10.0.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.29.0"
   }
 }
