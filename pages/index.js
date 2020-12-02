@@ -89,7 +89,7 @@ function Home() {
                 <h2>Criamos parcerias para fornecer conteúdos incríveis e campanhas de marketing com resultados reais. </h2>
 
                 <Link href="/sobre">
-                    <a className="s-link">Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i></a>
+                    <a className="s-link">Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i> </a>
                 </Link>
 
             </div>
