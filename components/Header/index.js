@@ -34,7 +34,7 @@ function Header() {
 
             <li>
 
-            <Link href="/">
+            <Link href="/sobre">
                 <a>Sobre</a>
             </Link>
 
@@ -43,7 +43,7 @@ function Header() {
 
             <li>
 
-            <Link href="/">
+            <Link href="/servicos">
                 <a>Serviços</a>
             </Link>
 
@@ -53,7 +53,7 @@ function Header() {
 
             <li>
 
-            <Link href="/">
+            <Link href="/trabalhos">
                 <a>Trabalhos</a>
             </Link>
 
@@ -62,7 +62,7 @@ function Header() {
 
             <li>
 
-            <Link href="/">
+            <Link href="/produtos">
                 <a>Produtos</a>
             </Link>
 
@@ -72,7 +72,7 @@ function Header() {
 
             <li>
 
-            <Link href="/">
+            <Link href="/contato">
                 <a>Contato</a>
             </Link>
 

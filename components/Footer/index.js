@@ -36,16 +36,16 @@ function Footer() {
         </div>
 
         <div className="item text-right">
-            <h3>Rio de Janeiro</h3>
+            <h3>FCNKG</h3>
             
         </div>
 
         <div className="item text-right">
-            <h3>São Paulo</h3>
+            <h3>CRTVE</h3>
         </div>
 
         <div className="item text-right">
-            <h3>Curitiba</h3>
+            <h3>STDIO</h3>
         </div>
 
     </div>
