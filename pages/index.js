@@ -57,18 +57,16 @@ function Home() {
     <section className="services--home">
         <div className="main--container text-center">
 
-            <h3>Marketing de Influência 
-                <small>Produção de Conteúdo</small> 
 
-                Gestão de Redes Sociais 
-                <small>Campanhas Publicitárias</small> 
-                
-                Desenvolvimento Web 
-                <small>Gestão de E-Commerce</small>
+            <ul>
+                <li>Marketing de Influência</li>
+                <li>Produção de Conteúdo</li>
+                <li>Gestão de Redes Sociais</li>
+                <li>Campanhas Publicitárias</li>
+                <li>Desenvolvimento Web</li>
+                <li>Gestão de E-Commerce</li>
+            </ul>
 
-                Produção Executiva 
-                
-                </h3>
 
             <Link href="/servicos">
                 <a className="s-link">Saiba mais sobre nossos serviços <i class="fas fa-arrow-right"></i></a>
@@ -87,6 +85,10 @@ function Home() {
                 <p>Entregamos experiências, não anúncios.</p>
 
                 <h2>Criamos parcerias para fornecer conteúdos incríveis e campanhas de marketing com resultados reais. </h2>
+
+                <p>Desde 2014, já são mais de 300 clientes atendidos em todo o território nacional e mais de 1 bilhão de pessoas impactadas.</p>
+
+                <p>é apenas o começo.</p>
 
                 <Link href="/sobre">
                     <a className="s-link">Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i> </a>
@@ -110,64 +112,6 @@ function Home() {
         </div>
 
         <div className="main--container">
-
-
-{/* <div className="flex wrap">
-    <div className="item">
-    <Image
- layout="responsive"
-
- src="/svg/microsoft.svg"
- alt="Picture of the author"
- height="200"
- width="250"
-         />
-    </div>
-
-    <div className="item">
-    <Image
- layout="responsive"
-
- src="/svg/microsoft.svg"
- alt="Picture of the author"
- height="200"
- width="250"
-         />
-    </div>
-
-    <div className="item">
-    <Image
- layout="responsive"
-
- src="/svg/microsoft.svg"
- alt="Picture of the author"
- height="200"
- width="250"
-         />
-    </div>
-
-    <div className="item">
-    <Image
- layout="responsive"
-
- src="/svg/microsoft.svg"
- alt="Picture of the author"
- height="200"
- width="250"
-         />
-    </div>
-
-    <div className="item">
-    <Image
- layout="responsive"
-
- src="/svg/microsoft.svg"
- alt="Picture of the author"
- height="200"
- width="250"
-         />
-    </div>
-</div> */}
 
 
 </div>

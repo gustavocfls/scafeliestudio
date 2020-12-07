@@ -2,9 +2,11 @@
 
 
     .services--home {
-        h3 {
-            font-size: 28px !important;
-            line-height: 40px;
+        ul {
+            li {
+                display: block !important;
+                line-height: 28px;
+            }
         }
     }
   
