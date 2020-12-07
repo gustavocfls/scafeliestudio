@@ -1,4 +1,4 @@
-import "../styles/styles.scss"
+import "../styles/global.scss"
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'

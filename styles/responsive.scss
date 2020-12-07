@@ -1,0 +1,44 @@
+@media screen and (max-width: 992px) {
+
+
+    .services--home {
+        h3 {
+            font-size: 28px !important;
+            line-height: 40px;
+        }
+    }
+  
+
+    .call--about {
+        .flex {
+            display: inherit !important;
+        }
+
+        .content-call--about {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-right: 0px !important;
+        }
+    }
+
+
+
+    footer {
+
+        text-align: center;
+
+        .flex {
+            display: inherit !important;
+        }
+
+        .text-right {
+            text-align: center !important;
+        }
+
+        h3 {
+            line-height: 5px;
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+    }
+  }

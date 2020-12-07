@@ -5,7 +5,9 @@ function MyApp({ Component, pageProps }) {
   }
 
   
-  import '../styles/styles.scss';
+  import '../styles/global.scss';
+
+
   import '../components//Header/Header.scss';
   import '../components//Footer/Footer.scss';
   

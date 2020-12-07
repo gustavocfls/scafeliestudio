@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
 
+@import url('responsive.scss');
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 
 // $primary-color: #FFFE2B;
@@ -223,13 +224,6 @@ section {
 
   .hero--about {
     background-color: #101010;
-    color: #fff;
-    padding-top: 120px;
-
-    h1 {
-      font-size: 90px;
-      line-height: 90px;
-    }
   }
 
 
@@ -251,3 +245,6 @@ section {
       }
     }
   }
+
+
+  @import url('responsive.scss');
