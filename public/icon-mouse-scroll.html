@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Potlab Icons</title>
+  <style>
+    div {
+      margin-top: 10%;
+      margin-left: 50%;
+    }
+
+    svg {
+      text-align: center;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    #icon-mouse-scroll .scroll {
+      -webkit-animation: scrolling 1s alternate infinite ease-in-out;
+      animation: scrolling 1s alternate infinite ease-in-out;
+    }
+
+    @-webkit-keyframes scrolling {
+      0% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+      }
+
+      100% {
+        -webkit-transform: translate(0px, 80px);
+        transform: translate(0px, 80px);
+      }
+    }
+
+    @keyframes scrolling {
+      0% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+      }
+
+      100% {
+        -webkit-transform: translate(0px, 80px);
+        transform: translate(0px, 80px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <svg id="icon-mouse-scroll" viewBox="-105 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M151 0C68 0 0 68 0 151v210a151 151 0 0 0 301 0V151C301 68 234 0 151 0zm119 361a120 120 0 0 1-239 0V151a120 120 0 0 1 239 0zm0 0" />
+      <path class="scroll" fill="#ffffff" stroke-width="2" d="M151 102c-9 0-16 7-16 15v71a15 15 0 0 0 31 0v-71c0-8-7-15-15-15zm0 0" />
+    </svg>
+  </div>
+</body>
+
+</html>

@@ -6,6 +6,7 @@ import Link from 'next/link'
 function Header() {
        
     return <>
+
     
     <header>
         <div className="main--container flex wrap align-items-center">
@@ -18,7 +19,7 @@ function Header() {
 
         <Image
             src="/svg/logo-scafeli.svg"
-            alt="FCKNG CRTVE STDIO"
+            alt="Gustavo Scafeli"
             width="55"
             height="80"
         />
@@ -53,22 +54,12 @@ function Header() {
 
             <li>
 
-            <Link href="/trabalhos">
-                <a>Trabalhos</a>
+            <Link href="/portfolio">
+                <a>Portfolio</a>
             </Link>
 
             </li>
-
-
-            <li>
-
-            <Link href="/produtos">
-                <a>Produtos</a>
-            </Link>
-
-            </li>
-
-            
+           
 
             <li>
 

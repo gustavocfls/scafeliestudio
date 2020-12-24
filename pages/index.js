@@ -6,17 +6,27 @@ import Link from 'next/link'
 import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
 
-
 function Home() {
     return <>
 
     <Header />
 
     <Head>
-        <title>SCAFELI // FCKNG CRTVE STDIO</title>
+        <title>Scafeli | Publicidade e Marketing</title>
+        <meta name="description" content="Desde 2014, já são mais de 200 clientes atendidos por todo o mundo e milhões de pessoas impactadas pelo nosso trabalho. Isso é Scafeli." />
+
+        <meta name="robots" content="all" />
+
+        <meta content="pt_BR" property="og:locale" />
+
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="Scafeli" key="title" />
+
+        <link href="https://www.scafeli.com.br" rel="canonical" />
+        <link href="https://www.scafeli.com.br" rel="home" />
     </Head>
+
+
 
     <section className="hero">
         
@@ -54,24 +64,24 @@ function Home() {
 
     </section>
 
+
+    
     <section className="services--home">
         <div className="main--container text-center">
 
 
             <ul>
-                <li>Marketing de Influência</li>
+                <li>Campanhas Publicitárias</li>
                 <li>Produção de Conteúdo</li>
                 <li>Gestão de Redes Sociais</li>
-                <li>Campanhas Publicitárias</li>
+                <li>Marketing de Influência</li>
                 <li>Desenvolvimento Web</li>
-                <li>Gestão de E-Commerce</li>
+                <li>E-Commerce</li>
             </ul>
-
 
             <Link href="/servicos">
                 <a className="s-link">Saiba mais sobre nossos serviços <i class="fas fa-arrow-right"></i></a>
             </Link>
-            
             
         </div>
     </section>
@@ -86,7 +96,7 @@ function Home() {
 
                 <h2>Criamos parcerias para fornecer conteúdos incríveis e campanhas de marketing com resultados reais. </h2>
 
-                <p>Desde 2014, já são mais de 300 clientes atendidos em todo o território nacional e mais de 1 bilhão de pessoas impactadas.</p>
+                <p>Desde 2014, já são mais de 200 clientes atendidos por todo o mundo e milhões de pessoas impactadas pelo nosso trabalho.</p>
 
                 <p>é apenas o começo.</p>
 
@@ -98,21 +108,19 @@ function Home() {
 
             <div className="item">
 
-            <Image
-            layout="responsive"
-
-            src="/supreme-scafeli.png"
-            alt="Scafeli"
-            height="1650"
-            width="1275"
-                    />
+                <Image
+                    layout="responsive"
+                    src="/supreme-scafeli.png"
+                    alt="Scafeli"
+                    height="1200"
+                    width="1200"
+                />
 
             </div>
 
         </div>
 
         <div className="main--container">
-
 
 </div>
 

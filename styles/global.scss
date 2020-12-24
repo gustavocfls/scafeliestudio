@@ -115,23 +115,28 @@ section {
   // SERVICES
 
   .services--home {
-    background-color: #f1f1f1;
+    background-color:#f8f8f8;
     padding-bottom: 50px;
     padding-top: 50px;
 
     ul {
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
       margin-bottom: 30px;
+      display: block;
 
       li {
         list-style: none;
-        display: inline;
+        display: inline-block;
         font-size: 32px;
         padding: 10px;
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         font-weight: bold;
+        transition: all ease .3s;
+        opacity: 1;
+
+    
       }
     
     }
@@ -245,5 +250,47 @@ section {
     }
   }
 
+
+  #icon-mouse-scroll {
+    position: absolute;
+    bottom: 30px;
+    max-width: 30px;
+
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  }
+  
+  #icon-mouse-scroll .scroll {
+    
+    -webkit-animation: scrolling 1s alternate infinite ease-in-out;
+    animation: scrolling 1s alternate infinite ease-in-out;
+  }
+
+  @-webkit-keyframes scrolling {
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      -webkit-transform: translate(0px, 80px);
+      transform: translate(0px, 80px);
+    }
+  }
+
+  @keyframes scrolling {
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      -webkit-transform: translate(0px, 80px);
+      transform: translate(0px, 80px);
+    }
+  }
 
   @import url('responsive.scss');
