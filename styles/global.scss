@@ -294,3 +294,70 @@ text-align: center;
   }
 
   @import url('responsive.scss');
+
+
+
+  .bio {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #131313;
+
+    .credits {
+      color: #303030 !important;
+    }
+
+  }
+
+  .bio-links {
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+
+    p {
+      color: #fff;
+    }
+
+    h3 {
+      color: #fff;
+
+      i {
+        color: #3896EF;
+      }
+
+      
+    }
+
+    
+
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      text-align: center;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          padding: 20px;
+          display: block;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          border: 1px solid #fff;
+        }
+
+      }
+    }
+  }
