@@ -40,7 +40,7 @@ function Home(props) {
             <Row className="align-items-center">
                 <Col md={6}>
                 
-                <p className="lead">Marketing Digital sob medida para PMEs</p>
+                <p className="lead hide">Marketing Digital sob medida para PMEs</p>
                 <h1>Ajudamos a sua empresa crescer na internet</h1>
                 <p className="lead">Site desatualizado? Redes sociais sem engajamento e vendas? Mude agora para a Scafeli e cresça no universo digital.</p>
 

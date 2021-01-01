@@ -1,5 +1,9 @@
 @media screen and (max-width: 992px) {
 
+    .hide {
+        display: none;
+    }
+
     .nav-link:first-child {
         margin-left: 0px !important;
     }
