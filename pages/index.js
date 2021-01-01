@@ -1,21 +1,23 @@
+import React from "react";
+
 import "../styles/global.scss"
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
 import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
 
-function Home() {
+function Home(props) {
     return <>
 
     <Header />
 
     <Head>
-        <title>Scafeli Rio de Janeiro</title>
-        <meta name="description" content="Desde 2014, já são mais de 200 clientes atendidos por todo o mundo e milhões de pessoas impactadas pelo nosso trabalho. Isso é Scafeli." />
+        <title>Scafeli - Marketing Digital sob medida para PMEs</title>
+        <meta name="description" content="A Scafeli é a sua agência de marketing digital. Gestão inteligente de redes. Planos a partir de R$89/mês." />
 
         <meta name="robots" content="all" />
 
@@ -26,63 +28,119 @@ function Home() {
 
         <link href="https://www.scafeli.com.br" rel="canonical" />
         <link href="https://www.scafeli.com.br" rel="home" />
+
+        <script src="//code.jivosite.com/widget/IzyMPqdDXw" async></script>
+
     </Head>
     
-    <section className="hero">        
+    <section className="hero d-flex">        
         
-        <Container className="text-center">
+        <Container>
 
-            <h1>Creative Agency</h1>
-            <p>Uma agência criativa que atende as melhores marcas e pessoas do mundo desde 2014.</p>
+            <Row className="align-items-center">
+                <Col md={6}>
+                
+                {/* <p>Muito mais que uma agência</p> */}
+                <h1>Ajudamos a sua empresa crescer na internet</h1>
+                <p className="lead">Site velho e parado? Redes sociais sem engajamento e vendas? Mude para a Scafeli e se destaque no universo digital.</p>
+
+                </Col>
+
+
+                <Col md={6}>
+                    <Image
+                        layout="responsive"
+                        src="/girl-hero.png"
+                        alt="Scafeli"
+                        height="1200"
+                        width="1200"
+                    />
+                </Col>
+
+            </Row>            
 
         </Container>
         
     </section>
 
+    {/* <section>
+        <Container>
+        <h1>Blog list</h1>
+        <ul>
+            {props.blogs.map((blog, idx) => {
+            return (
+                <li key={blog.id}>
+                <Link href={`/blog/${blog.slug}`}>
+                    <a>{blog.title}</a>
+                </Link>
+                </li>
+            );
+            })}
+        </ul>
+        </Container>
+    </section> */}
 
-    
-    <section className="services--home">
-        
-        <Container className="text-center">
 
-            <ul>
-                <li>Campanhas Publicitárias</li>
-                <li>Produção de Conteúdo</li>
-                <li>Gestão de Redes Sociais</li>
-                <li>Marketing de Influência</li>
-                <li>Desenvolvimento Web</li>
-                <li>E-Commerce</li>
-            </ul>
 
-            <Link href="/servicos">
-                <a className="s-link">Saiba mais sobre nossos serviços <i class="fas fa-arrow-right"></i></a>
-            </Link>
+    <section className="plans-home">
+        <Container>
+            <Row>
+                <Col md={4}>
+                    <div className="s-plan-home">
+                        <h2>Social Media</h2>
+                        <p>Conteúdos e estratégias para aumentar o seu engajamento</p>
+                        
+                        <p>a partir de</p>
+                        <h2><small>R$ </small>189 <small>/mês</small></h2>
 
-            </Container>
-            
+                        <Button variant="outline-primary">Saiba mais</Button>
+
+                    </div>
+                </Col>
+
+                <Col md={4}>
+                    <div className="s-plan-home">
+                        <h2>Criação de Sites</h2>
+                        <p>Todos os recursos para colocar o seu site ou loja virtual no ar</p>
+
+                        <p>a partir de</p>
+                        <h2><small>R$ </small>129 <small>/mês</small></h2>
+
+                        <Button variant="outline-primary">Saiba mais</Button>
+                    </div>
+                </Col>
+
+                <Col md={4}>
+                    <div className="s-plan-home">
+                        <h2>Marketing Digital</h2>
+                        <p>Uma equipe inteira trabalhando para o seu negócio</p>
+
+                        <p>a partir de</p>
+                        <h2><small>R$ </small>1.490 <small>/mês</small></h2>
+
+                        <Button variant="outline-primary">Saiba mais</Button>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     </section>
 
 
-    <section className="call--about">
+    <section className="d-flex social-home">
 
         <Container>
-            <Row>
+            <Row className="align-items-center">
+
                 <Col md={6}>
 
-                <p>Entregamos experiências, não anúncios.</p>
+                    <h1 className="p-color">Social Media</h1>
+                    <h1>Gestão inteligente e produção de conteúdo para redes sociais.</h1>
 
-                <h2>Criamos parcerias para fornecer conteúdos incríveis e campanhas de marketing com resultados reais. </h2>
-
-                <p>Desde 2014, já são mais de 200 clientes atendidos por todo o mundo e milhões de pessoas impactadas pelo nosso trabalho.</p>
-
-                <p>é apenas o começo.</p>
-
-                <Link href="/sobre">
-                    <a className="s-link">Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i> </a>
-                </Link>
+                    <Link href="/sobre">
+                        <a className="s-link">Conheça nossos planos <i class="fas fa-arrow-right"></i> </a>
+                    </Link>
 
                 </Col>
-
 
                 <Col md={6}>
                     <Image
@@ -96,7 +154,6 @@ function Home() {
                 
             </Row>
         </Container>
-
         
     </section>
 
@@ -110,6 +167,34 @@ function Home() {
         
     </>
 }
+
+// This function gets called at build time on server-side.
+export async function getStaticProps() {
+    const fs = require("fs");
+    const matter = require("gray-matter");
+    const { v4: uuid } = require("uuid");
+  
+    const files = fs.readdirSync(`${process.cwd()}/contents`, "utf-8");
+  
+    const blogs = files
+      .filter((fn) => fn.endsWith(".md"))
+      .map((fn) => {
+        const path = `${process.cwd()}/contents/${fn}`;
+        const rawContent = fs.readFileSync(path, {
+          encoding: "utf-8",
+        });
+        const { data } = matter(rawContent);
+  
+        return { ...data, id: uuid() };
+      });
+  
+      // By returning { props: blogs }, the IndexPage component
+    // will receive `blogs` as a prop at build time
+    return {
+      props: { blogs },
+    };
+  }
+  
 
 
 

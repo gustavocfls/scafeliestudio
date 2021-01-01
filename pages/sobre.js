@@ -48,6 +48,16 @@ function Sobre() {
         />
       </div>
 
+
+      <p>Entregamos experiências, não anúncios.</p>
+
+                <h2>Criamos parcerias para fornecer conteúdos incríveis e campanhas de marketing com resultados reais. </h2>
+
+                <p>Desde 2014, já são mais de 200 clientes atendidos por todo o mundo e milhões de pessoas impactadas pelo nosso trabalho.</p>
+
+                <p>é apenas o começo.</p>
+
+
       
 
             <h1>Sobre</h1>

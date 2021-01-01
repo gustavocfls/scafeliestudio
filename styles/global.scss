@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
-
 @import url('responsive.scss');
 
 
+$primary-color: #8E2EBF;
 
-// $primary-color: #FFFE2B;
-$primary-color: #ed473d;
+.p-color-bg {
+  background-color: $primary-color;
+}
+
+.badge-secondary {
+  background-color: $primary-color !important;
+}
+
+.p-color {
+  color: $primary-color !important;
+} 
 
 .color-white {
   color: #fff !important;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -22,19 +36,31 @@ body {
   color: #101010;
 }
 
+
+.navbar-light .navbar-nav .nav-link {
+  color: #585858;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: $primary-color;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-
 p {
   font-size: 18px;
   margin-bottom: 20px;
+
+  a {
+    color: $primary-color;
+  }
 }
 
 
@@ -83,64 +109,60 @@ section {
   // HERO
   
   .hero {
-    background-color: #101010;
-    padding: 120px 0 60px 0;
+    background-color: $primary-color;
 
     h1 {
-      font-family: 'Oswald', sans-serif;
       letter-spacing: 1px;
-      text-transform: uppercase;
       color: #fff;
-      font-size: 120px;
-      line-height: 130px;
-      margin: 0 auto;
       margin-top: 0px;
-      margin-bottom: 0px;
-      max-width: 1000px;
-
+      font-size: 52px;
+      line-height: 56px;
+      margin-bottom: 20px;
     }
 
     p {
-      color: #909090;
-      margin: 0 auto;
-      max-width: 1000px;
-      margin-top: 10px;
-      font-size: 20px;
-      line-height: 30px;
-      margin-bottom: 50px;
+      color: #fff;
+      line-height: 32px;
     }
   }
 
 
-  // SERVICES
+  
+  .support-hero {
+    background-image:
+  linear-gradient(to top, rgba(16, 16, 16, 0.70), rgba(16, 16, 16, 1)),
+  url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/9d2bca93139897.5e5d64f486c11.jpg');  
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
 
-  .services--home {
-    background-color:#f8f8f8;
-    padding-bottom: 50px;
-    padding-top: 50px;
+  margin-bottom: 20px;
 
-    ul {
-      margin: 0 auto;
-      padding: 0;
-      margin-bottom: 30px;
-      display: block;
-
-      li {
-        list-style: none;
-        display: inline-block;
-        font-size: 32px;
-        padding: 10px;
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: all ease .3s;
-        opacity: 1;
-
-    
-      }
-    
-    }
+  color: #fff;
   }
+
+// PLANS HOME
+
+.plans-home {
+
+  padding: 50px 0;
+
+  .s-plan-home {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+// SOCIAL HOME
+
+.social-home {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 50px 0px;
+}
 
 
   .services {
@@ -180,12 +202,16 @@ section {
 
 
   .s-link {
-    color: #303030;
+    color: $primary-color;
       text-decoration: none;
       font-weight: 500;
 
       i {
         margin-left: 6px;
+      }
+
+      &:hover {
+        color: $primary-color;
       }
   }
 
@@ -336,6 +362,7 @@ text-align: center;
     }
 
     
+
 
 
 
