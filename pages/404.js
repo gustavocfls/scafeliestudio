@@ -5,34 +5,29 @@ import Image from 'next/image'
 import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
 
+import { Container, Row, Col, Button } from 'react-bootstrap'
+
+
 export default function FourOhFour() {
   return <>
 
 <Header />
 
 
-<div className="main--container">
 
-<h1>404 - Página não encontrada</h1>
+<Container className="text-center page-error">
 
-<Image
-        src="/error.gif"
-        alt="Página não encontrada - Scafeli"
-        width="250"
-        height="214"
-    />
+<h1>Página não encontrada</h1>
 
+<p>A página que você procurou foi removida ou nunca existiu.</p>
 
 <Link href="/">
   <a className="s-link">
-    Voltar para o Início
+    Voltar para o Início <i class="fas fa-undo-alt"></i>
   </a>
 </Link>
 
-
-</div>
-    
-
+</Container>
 
 
     <Footer />
