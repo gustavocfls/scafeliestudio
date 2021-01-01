@@ -40,9 +40,9 @@ function Home(props) {
             <Row className="align-items-center">
                 <Col md={6}>
                 
-                {/* <p>Muito mais que uma agência</p> */}
+                <p className="lead">Marketing Digital sob medida para PMEs</p>
                 <h1>Ajudamos a sua empresa crescer na internet</h1>
-                <p className="lead">Site velho e parado? Redes sociais sem engajamento e vendas? Mude para a Scafeli e se destaque no universo digital.</p>
+                <p className="lead">Site desatualizado? Redes sociais sem engajamento e vendas? Mude agora para a Scafeli e cresça no universo digital.</p>
 
                 </Col>
 
@@ -91,7 +91,7 @@ function Home(props) {
                         <p>Conteúdos e estratégias para aumentar o seu engajamento</p>
                         
                         <p>a partir de</p>
-                        <h2><small>R$ </small>189 <small>/mês</small></h2>
+                        <h2><small>R$</small>189<small>/mês</small></h2>
 
                         <Button variant="outline-primary">Saiba mais</Button>
 
@@ -104,7 +104,7 @@ function Home(props) {
                         <p>Todos os recursos para colocar o seu site ou loja virtual no ar</p>
 
                         <p>a partir de</p>
-                        <h2><small>R$ </small>129 <small>/mês</small></h2>
+                        <h2><small>R$</small>129<small>/mês</small></h2>
 
                         <Button variant="outline-primary">Saiba mais</Button>
                     </div>
@@ -116,7 +116,7 @@ function Home(props) {
                         <p>Uma equipe inteira trabalhando para o seu negócio</p>
 
                         <p>a partir de</p>
-                        <h2><small>R$ </small>1.490 <small>/mês</small></h2>
+                        <h2><small>R$</small>1.490<small>/mês</small></h2>
 
                         <Button variant="outline-primary">Saiba mais</Button>
                     </div>

@@ -1,5 +1,9 @@
 @media screen and (max-width: 992px) {
 
+    .nav-link:first-child {
+        margin-left: 0px !important;
+    }
+
 
     .services--home {
         ul {
@@ -44,3 +48,18 @@
         }
     }
   }
+
+
+
+  @media screen and (max-width: 765px) {
+
+
+    .hero {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .nav-link:first-child {
+        margin-left: 0px !important;
+    }
+}
