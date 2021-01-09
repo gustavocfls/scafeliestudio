@@ -5,8 +5,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
 @import url('responsive.scss');
 
+html {
+  scroll-behavior: smooth;
+}
 
-$primary-color: #8E2EBF;
+$primary-color: #845FFF;
+$secondary-color: #ffcf4e;
 
 .p-color-bg {
   background-color: $primary-color;
@@ -19,6 +23,10 @@ $primary-color: #8E2EBF;
 .p-color {
   color: $primary-color !important;
 } 
+
+.p-sec-color {
+  color: $secondary-color !important;
+}
 
 .color-white {
   color: #fff !important;
@@ -34,8 +42,16 @@ body {
   font-size: 100%;
   font-size: 16px;
   color: #101010;
+  background-color: #f0f0f0;
 }
 
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 99999;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: #585858;
@@ -48,13 +64,19 @@ body {
   margin-left: 30px;
 }
 
-.navbar-brand {
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.s-link {
   color: $primary-color;
-}
+    text-decoration: none;
+    font-weight: 500;
 
+    i {
+      margin-left: 6px;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+}
 
 img {
   max-width: 100%;
@@ -71,56 +93,12 @@ p {
 }
 
 
-.flex {
-	display: flex;
-}
-
-.wrap {
-	flex-wrap: wrap;
-}
-
-.flex-item {
-	flex: 1;
-}
-
-.item {
-  flex: 1;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-
-.page-error {
-  padding: 50px 0px; 
-}
-
-
-section {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-
-
-
-  .main--container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
 
   // HERO
   
   .hero {
-    background-color: $primary-color;
+
+    background-color: $primary-color;    
 
     h1 {
       letter-spacing: 1px;
@@ -132,270 +110,55 @@ section {
     }
 
     p {
-      color: #fff;
+      color: $secondary-color;
       line-height: 32px;
     }
+    
   }
 
 
   
-  .support-hero {
-    background-image:
-  linear-gradient(to top, rgba(16, 16, 16, 0.70), rgba(16, 16, 16, 1)),
-  url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/9d2bca93139897.5e5d64f486c11.jpg');  
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
-
-  margin-bottom: 20px;
-
-  color: #fff;
-  }
-
-// PLANS HOME
-
-.plans-home {
-
-  padding: 50px 0;
-
-  .s-plan-home {
-    border: 1px solid #e1e1e1;
-    text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-// SOCIAL HOME
-
-.social-home {
+.criacaodesites-home {
   background-color: $primary-color;
   color: #fff;
   padding: 50px 0px;
+
+  .s-link {
+    color: #fff !important;
+    display: inline-block;
+    margin-top: 15px;
+  }
 }
 
 
-  .services {
-    background-color: #f5f5f5;
-    padding-top: 50px;
-    padding-bottom: 40px;
-
-    h3 {
-      margin-top: 10px;
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-
-      li {
-        list-style: none;
-        margin-bottom: 10px;
-        color: #303030;
-      }
-    }
-
-    .item {
-      flex: 1;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      background: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      min-width: 200px;
-
-      &:last-child {
-        margin-right: 0px;
-      }
-    }
-  }
-
-
-  .s-link {
-    color: $primary-color;
-      text-decoration: none;
-      font-weight: 500;
-
-      i {
-        margin-left: 6px;
-      }
-
-      &:hover {
-        color: $primary-color;
-      }
-  }
-
-// CALL ABOUT
-  .call--about {
-
+  footer {
+    background-color: #f2f2f2;
     padding: 50px 0px;
+    color: #585858;
 
-    .content-call--about {
-      margin-right: 40px;
-
-      p {
-        text-transform: uppercase;
-        font-size: 18px;
-        color: #999;
-        font-family: 'Oswald', sans-serif;
-        margin-bottom: 20px;
-      }
-
-      h2 {
-        font-size: 32px;
-        letter-spacing: 1px;
-        line-height: 42px;
-        margin-top: 0px;
-      }
-    }
-  }
-
-
-  .clients {
-    img {
-      padding: 15px !important;
-    }
-  }
-
-
-
-
-  // PAGE ABOUT
-
-  .hero--about {
-    background-color: #101010;
-  }
-
-
-  .adv--about {
     ul {
       margin: 0;
       padding: 0;
-
+      margin-bottom: 20px;
       li {
         list-style: none;
-        margin-bottom: 20px;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 500;
+        display: inline-block;
+        a {
+          color: #585858;
+          font-size: 20px;
+          padding: 15px;
+          transition: all ease .3s;
 
-        i {
-          margin-right: 5px;
+          &:hover {
+            color: $primary-color
+          }
         }
       }
     }
   }
 
 
-  #icon-mouse-scroll {
-    position: absolute;
-    bottom: 30px;
-    max-width: 30px;
 
-    margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
-  }
-  
-  #icon-mouse-scroll .scroll {
-    
-    -webkit-animation: scrolling 1s alternate infinite ease-in-out;
-    animation: scrolling 1s alternate infinite ease-in-out;
-  }
-
-  @-webkit-keyframes scrolling {
-    0% {
-      -webkit-transform: translate(0px, 0px);
-      transform: translate(0px, 0px);
-    }
-
-    100% {
-      -webkit-transform: translate(0px, 80px);
-      transform: translate(0px, 80px);
-    }
-  }
-
-  @keyframes scrolling {
-    0% {
-      -webkit-transform: translate(0px, 0px);
-      transform: translate(0px, 0px);
-    }
-
-    100% {
-      -webkit-transform: translate(0px, 80px);
-      transform: translate(0px, 80px);
-    }
-  }
 
   @import url('responsive.scss');
 
-
-
-  .bio {
-
-    min-height: 100vh;
-
-    display: flex;
-
-    align-items: center;
-
-    background-color: #131313;
-
-    .credits {
-      color: #303030 !important;
-    }
-
-  }
-
-  .bio-links {
-
-    margin: 0 auto;
-
-    padding: 0 20px;
-
-    text-align: center;
-
-    p {
-      color: #fff;
-    }
-
-    h3 {
-      color: #fff;
-
-      i {
-        color: #3896EF;
-      }
-
-      
-    }
-
-    
-
-
-
-
-    ul {
-      margin: 0;
-      padding: 0;
-
-      text-align: center;
-
-      li {
-        list-style: none;
-
-        a {
-          text-decoration: none;
-          color: #fff;
-          padding: 20px;
-          display: block;
-          margin-bottom: 20px;
-          border-radius: 10px;
-          border: 1px solid #fff;
-        }
-
-      }
-    }
-  }
