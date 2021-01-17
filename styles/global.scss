@@ -9,11 +9,16 @@ html {
   scroll-behavior: smooth;
 }
 
-$primary-color: #7E6AAF;
-$secondary-color: #FBF583;
+$primary-color: #F9660E;
+$secondary-color: #232325;
 
 .p-color-bg {
   background-color: $primary-color;
+}
+
+
+.sec-color-bg {
+  background-color: $secondary-color;
 }
 
 .badge-secondary {
@@ -98,7 +103,7 @@ p {
   
   .hero {
 
-    background-color: $primary-color;    
+    background-color: $secondary-color;    
 
     h1 {
       letter-spacing: 1px;
@@ -119,7 +124,7 @@ p {
 
   
 .criacaodesites-home {
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: #fff;
   padding: 50px 0px;
 

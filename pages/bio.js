@@ -21,7 +21,7 @@ function Bio() {
 
             <ul>
                 <li><a href="https://wa.me/5521964105305">Fale conosco no WhatsApp <i class="fab fa-whatsapp"></i></a></li>
-                <li><a href="https://behance.com/scafeliestudio">Veja mais trabalhos <i class="fab fa-behance"></i></a></li>
+                <li><a href="http://be.net/agenciascafeli">Veja mais trabalhos <i class="fab fa-behance"></i></a></li>
                 
                 <li><a href="https://scafeli.com.br/blog">Últimos posts no blog <i class="fas fa-asterisk"></i></a></li>
                 <li><a href="https://scafeli.com.br">Conheça o nosso site <i class="fas fa-bolt"></i></a></li>

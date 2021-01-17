@@ -88,33 +88,21 @@ function Home() {
 </Container>
 </header>
     
-    <section className="hero d-flex">        
+    <section className="hero text-center">        
         
         <Container>
 
-            <Row className="align-items-center">
-                <Col md={6} >
-
+               
                     <div className="#">
                 
+                
+                <h1>FCKNG CRVTE STDIO</h1>
                 <p className="lead hide p-sec-color"><b>Conteúdo de valor para marcas inteligentes</b></p>
-                <h1>Ajudamos a sua empresa crescer na internet</h1>
                 </div>
 
-                </Col>
 
 
-                <Col md={6}>
-                    <Image
-                        layout="responsive"
-                        src="/iphone-hero.png"
-                        alt="Scafeli"
-                        height="1080"
-                        width="1080"
-                    />
-                </Col> 
-
-            </Row>            
+                         
 
         </Container>
         
@@ -147,7 +135,7 @@ function Home() {
     </section>
 
 
-    <section className="d-flex criacaodesites-home">
+    <section className="d-flex sec-color-bg criacaodesites-home">
 
         <Container>
             <Row className="align-items-center">
@@ -211,7 +199,7 @@ function Home() {
 
             <ul>
                 <li><a target="_blank" href="https://instagram.com/agenciascafeli"><i class="fab fa-instagram"></i></a></li>
-                <li><a target="_blank" href="https://behance.net/agenciascafeli"><i class="fab fa-behance"></i></a></li>
+                <li><a target="_blank" href="http://be.net/agenciascafeli"><i class="fab fa-behance"></i></a></li>
                 
                 <li><a target="_blank" href="https://www.youtube.com/channel/UC3qxlRY4Z9WbF_4QGK5CX-A"><i class="fab fa-youtube"></i></a></li>
                 <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5521964105305&text=Ol%C3%A1!%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20produ%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20da%20Scafeli."><i class="fab fa-whatsapp"></i></a></li>
@@ -219,7 +207,7 @@ function Home() {
 
             <p>© 2021 Scafeli - Conteúdos Digitais <br></br>BR 101, Km 295 - Itaboraí, RJ</p>
 
-            <p className="credits">May the force be with you! <br></br><i class="fas fa-jedi"></i></p>
+            <p className="credits"><i class="fas fa-jedi"></i></p>
             
         </Container>
     </footer>
