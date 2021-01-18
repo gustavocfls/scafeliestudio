@@ -12,7 +12,7 @@ function Home() {
     return <>
 
     <Head>
-        <title>Scafeli - Produtora de Conteúdos Digitais</title>
+        <title>Gustavo Scafeli - Director of Photography</title>
         <meta name="description" content="A Scafeli é a uma empresa de Marketing de Conteúdo. Gestão de Redes Sociais, Criação de Sites e Produção de Conteúdo é na Scafeli." />
 
         <meta name="robots" content="all" />
@@ -27,16 +27,16 @@ function Home() {
     </Head>
 
 
-    <header className="stick">
+    <header>
 
 <Container>
-    <Navbar collapseOnSelect expand="lg" variant="light" >
+    <Navbar collapseOnSelect expand="lg" variant="dark" >
       <Navbar.Brand href="/" className="mr-auto">
           <Image
-                src="/svg/logo.svg"
+                src="/svg/logo-scafeli.svg"
                 alt="Scafeli"
-                width="150"
-                height="45"
+                width="180"
+                height="60"
             />
         </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -44,9 +44,20 @@ function Home() {
     <Nav className="mr-auto">
 
 
+   
+      
+    </Nav>
+    <Nav>
+
     <Link href="/socialmedia">
     <Nav.Link as="a" href="/socialmedia">      
-        Social Media <Badge variant="secondary">Novo!</Badge>
+        Home
+    </Nav.Link>
+    </Link>
+
+    <Link href="/socialmedia">
+    <Nav.Link as="a" href="/socialmedia">      
+        Films
     </Nav.Link>
     </Link>
 
@@ -54,30 +65,27 @@ function Home() {
 
     <Link href="/sites">
       <Nav.Link as="a" href="/sites">      
-          Criação de Sites
+          Stills
       </Nav.Link>
     </Link>
 
     <Link href="/conteudo">
     <Nav.Link as="a" href="/conteudo">      
-        Produção de Conteúdo
+        Prints
     </Nav.Link>
-    </Link>
-      
-    </Nav>
-    <Nav>
+    </Link> 
 
   
 
     <Link href="/">
     <Nav.Link as="a" href="/">      
-        Quem somos
+        About
     </Nav.Link>
   </Link>
 
   <Link href="https://api.whatsapp.com/send?phone=5521964105305&text=Ol%C3%A1!%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20produ%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20da%20Scafeli.">
-    <Nav.Link as="a" target="_blank" href="https://api.whatsapp.com/send?phone=5521964105305&text=Ol%C3%A1!%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20produ%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20da%20Scafeli." className="p-color">      
-        Fale conosco <i class="fas fa-arrow-right"></i>
+    <Nav.Link as="a" target="_blank" href="https://api.whatsapp.com/send?phone=5521964105305&text=Ol%C3%A1!%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20produ%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20da%20Scafeli.">      
+        Contact 
     </Nav.Link>
   </Link>
 
@@ -92,13 +100,16 @@ function Home() {
         
         <Container>
 
-               
-                    <div className="#">
+                              
+                {/* <p className="lead">Gustavo Scafeli</p> */}
+                {/* <h1>Gustavo Scafeli</h1> */}
                 
                 
-                <h1>FCKNG CRVTE STDIO</h1>
-                <p className="lead hide p-sec-color"><b>Conteúdo de valor para marcas inteligentes</b></p>
-                </div>
+
+
+                <div class="embed-responsive embed-responsive-16by9" data-aos="fade">
+    <iframe width="1920" height="1080" src="https://www.youtube.com/embed/hpHnxk4lv7g?autoplay=1&loop=1&mute=1&controls=0" allowfullscreen></iframe>
+    </div>
 
 
 
@@ -108,90 +119,30 @@ function Home() {
         
     </section>   
 
-    <section className="socialmedia-home d-flex">
+    <section className="social-home d-flex">
         <Container>
             <Row className="align-items-center">
                 <Col md={6}>
                     <Image
                         layout="responsive"
-                        src="/iphone-hero.png"
+                        src="/carol-salucci-scafeli.jpg"
                         alt="Scafeli"
-                        height="1080"
-                        width="1080"
+                        height="650"
+                        width="1000"
                     />
                 </Col>
 
                 <Col md={6}>
-                <h1 className="p-color">Social Media</h1>
-                    <h1>Gestão inteligente e produção de conteúdo para redes sociais.</h1>
 
-                    <Link href="/socialmedia">
-                        <a className="s-link">Conheça nossos planos <i class="fas fa-arrow-right"></i> </a>
-                    </Link>
+                <h1>Photographer</h1>
+                <h1>Director of Photography</h1>
+                <h1>Cinematographer</h1>
                 </Col>
 
             </Row>
         </Container>
     </section>
 
-
-    <section className="d-flex sec-color-bg criacaodesites-home">
-
-        <Container>
-            <Row className="align-items-center">
-
-                <Col md={6}>
-
-                    <h1 className="p-sec-color">Criação de sites</h1>
-                    <h1>Sites institucionais e gestão de lojas virtuais para a sua empresa.</h1>
-
-                    <Link href="/sites">
-                        <a className="s-link">Conheça nossos planos <i class="fas fa-arrow-right"></i> </a>
-                    </Link>
-
-                </Col>
-
-                <Col md={6}>
-                    <Image
-                        layout="responsive"
-                        src="/sites-hook.png"
-                        alt="Scafeli"
-                        height="1200"
-                        width="1200"
-                    />
-                </Col>
-                
-            </Row>
-        </Container>
-        
-    </section>
-
-
-    <section className="producaodeconteudo-home d-flex">
-        <Container>
-            <Row className="align-items-center">
-                <Col md={6}>
-                <Image
-                        layout="responsive"
-                        src="/iphone-hero.png"
-                        alt="Scafeli"
-                        height="1080"
-                        width="1080"
-                    />
-                </Col>
-
-                <Col md={6}>
-                     <h1 className="p-color">Produção de conteúdo</h1>
-                    <h1>Fotos e vídeos para destacar o potencial da sua marca na internet.</h1>
-
-                    <Link href="/conteudo">
-                        <a className="s-link">Conheça nossos planos <i class="fas fa-arrow-right"></i> </a>
-                    </Link>
-                </Col>
-
-            </Row>
-        </Container>
-    </section>
 
 
     <footer>
@@ -205,9 +156,7 @@ function Home() {
                 <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5521964105305&text=Ol%C3%A1!%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20produ%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20da%20Scafeli."><i class="fab fa-whatsapp"></i></a></li>
             </ul>
 
-            <p>© 2021 Scafeli - Conteúdos Digitais <br></br>BR 101, Km 295 - Itaboraí, RJ</p>
-
-            <p className="credits"><i class="fas fa-jedi"></i></p>
+            <p>Copyright © All rights reserved.</p>
             
         </Container>
     </footer>
