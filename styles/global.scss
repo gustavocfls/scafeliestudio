@@ -26,10 +26,8 @@ p {
   margin-bottom: 15px;
 }
 
-$primary-color: #E9FF00;
+$primary-color: #DC0000;
 $secondary-color: #131313;
-
-
 
 
 header {
@@ -58,10 +56,6 @@ header {
 
 }
 
-.nav-link:first-child {
-  margin-left: 30px;
-}
-
 
 img {
   max-width: 100%;
@@ -69,39 +63,123 @@ img {
 }
 
 
+.header-page {
+  padding: 50px 0px;
+  .title-page {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.s-link {
+  font-weight: 500;
+  color: #131313;
+  
+
+  i {
+    margin-left: 5px;
+    transition: all ease .2s;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #131313;
+
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+.service {
+  padding: 50px 0px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    li {
+      list-style: none;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      color: #777777;
+      margin-bottom: 10px;
+
+      i {
+        font-size: 14px;
+        color: #777777;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.dark {
+  background-color: #131313;
+  color: #fff;
+
+  .s-link {
+    color: #fff;
+  }
+}
+
 
 
   // HERO
   
   .hero {
 
-    background-color: $secondary-color;   
-    padding-bottom: 50px;
-    padding-top: 0px; 
+    background-color: #131313;
+    padding-bottom: 60px;
+    padding-top: 40px; 
 
     h1 {
       letter-spacing: 1px;
       color: #fff;
       margin-top: 0px;
-      font-size: 52px;
-      line-height: 56px;
-      margin-bottom: 20px;
+      font-size: 90px;
+      line-height: 100px;
+      margin-bottom: 10px;
     }
 
     p {
       color: #777777;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
       font-weight: 500;
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
     }
+
+    .cta-hero {
+      background-color: $primary-color;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      padding: 15px 25px;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
     
   }
 
-  .social-home {
+  .about-home {
     padding: 50px 0px;
+    p {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #999;
+      font-family: "Oswald",sans-serif;
+      margin-bottom: 20px;
+    }
   }
-
 
   footer {
     background-color: #131313;
