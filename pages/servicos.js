@@ -4,12 +4,19 @@ import Link from 'next/link'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+import GooglePartner from '../components/googlepartner';
+
+import Cta from '../components/Cta';
+
+
+
 import { Container, Row, Col } from 'react-bootstrap'
 
 
 export default function Servicos() {
     return(<>
         <Header />
+
 
         <Container className="header-page text-center">
             
@@ -23,7 +30,58 @@ export default function Servicos() {
         </Container>
 
 
+
+
         <section className="service">
+        <Container>
+        
+        
+        <Row className="align-items-center">
+
+            <Col md={4}>
+                <Image
+                    src="/supreme-scafeli.png"
+                    alt="Scafeli"
+                    width="1080"
+                    height="1080"
+                />
+
+                <h2>Produção de conteúdo</h2>
+            </Col>
+
+            <Col md={4}>
+                <Image
+                    src="/supreme-scafeli.png"
+                    alt="Scafeli"
+                    width="1080"
+                    height="1080"
+                />
+
+                <h2>Sites e lojas virtuais</h2>
+            </Col>
+
+            <Col md={4}>
+                <Image
+                    src="/supreme-scafeli.png"
+                    alt="Scafeli"
+                    width="1080"
+                    height="1080"
+                />
+
+                <h2>Marketing de influência</h2>
+            </Col>
+
+            
+        </Row>
+
+        </Container>
+    </section>
+
+    <GooglePartner />
+
+
+
+    <section className="service">
         <Container>
         
         
@@ -48,7 +106,7 @@ export default function Servicos() {
                     height="1080"
                 />
 
-                <h2>Produção Audiovisual</h2>
+                <h2>Criação de aplicativos</h2>
             </Col>
 
             <Col md={4}>
@@ -59,48 +117,16 @@ export default function Servicos() {
                     height="1080"
                 />
 
-                <h2>Produção Audiovisual</h2>
+                <h2>Gestão de anúncios</h2>
             </Col>
-
-            <Col md={4}>
-                <Image
-                    src="/supreme-scafeli.png"
-                    alt="Scafeli"
-                    width="1080"
-                    height="1080"
-                />
-
-                <h2>Produção Audiovisual</h2>
-            </Col>
-
-            <Col md={4}>
-                <Image
-                    src="/supreme-scafeli.png"
-                    alt="Scafeli"
-                    width="1080"
-                    height="1080"
-                />
-
-                <h2>Produção Audiovisual</h2>
-            </Col>
-
-            <Col md={4}>
-                <Image
-                    src="/supreme-scafeli.png"
-                    alt="Scafeli"
-                    width="1080"
-                    height="1080"
-                />
-
-                <h2>Produção Audiovisual</h2>
-            </Col>
-
 
             
         </Row>
 
         </Container>
     </section>
+
+    <Cta />
 
     <Footer />
 

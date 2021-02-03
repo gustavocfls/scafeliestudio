@@ -22,7 +22,7 @@ export default function Clientes() {
 
 
         <section className="service">
-        <Container fluid>
+        <Container>
         
         
         <Row className="align-items-center">
@@ -55,7 +55,7 @@ export default function Clientes() {
                     />
 
                     <h2>RR MakeUp</h2>
-                    <p>Catálogo digital</p>
+                    <p>Fotos / Catálogo digital</p>
 
                     <Link href="/cfb7">
                         <a>Ver projeto</a>
@@ -90,8 +90,8 @@ export default function Clientes() {
                         height="1080"
                     />
 
-                    <h2>CFB7 Brasil</h2>
-                    <p>Redes sociais / Produção audiovisual</p>
+                    <h2>Banned Store</h2>
+                    <p>Criação / Gestão de loja virtual</p>
 
                     <Link href="/cfb7">
                         <a>Empório Naval</a>

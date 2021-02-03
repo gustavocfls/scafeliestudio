@@ -7,8 +7,8 @@ import { Nav, Navbar, Container, Row, Col, Button, Badge } from 'react-bootstrap
 export default function Header () {
     return (<>
 
-<Head>
-        <title>scafeli | Publicidade e Marketing ─ Rio de Janeiro</title>
+    <Head>z\
+        <title>Scafeli ─ Agência de Publicidade e Marketing no Rio de Janeiro</title>
         <meta name="description" content="Desde 2014, já são mais de 300 clientes atendidos em todo o mundo e mais de 1 bilhão de pessoas impactadas pelo nosso trabalho. Fale conosco!" />
 
         <meta name="robots" content="all" />

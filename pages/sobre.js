@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import Cta from '../components/Cta';
+import GooglePartner from '../components/googlepartner';
 
 import { Container, Row, Col } from 'react-bootstrap'
 
@@ -22,9 +23,7 @@ export default function Sobre() {
                 </p>
         </Container>
 
-        <Container fluid>
-            imagem
-        </Container>
+        <GooglePartner />
 
         <Container>
             <Row>
@@ -39,14 +38,9 @@ export default function Sobre() {
             </Row>
         </Container>
 
-        <Container>
-            <div className="cta-area">
-
-            </div>
-        </Container>
 
        <Cta />
-       
+
        <Footer />
 
     </>);
