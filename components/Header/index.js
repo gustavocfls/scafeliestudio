@@ -4,12 +4,11 @@ import Link from 'next/link'
 
 import { Nav, Navbar, Container, Row, Col, Button, Badge } from 'react-bootstrap'
 
-
 export default function Header () {
     return (<>
 
 <Head>
-        <title>Scafeli - Produtora de Conteúdos Digitais</title>
+        <title>scafeli | Publicidade e Marketing ─ Rio de Janeiro</title>
         <meta name="description" content="Desde 2014, já são mais de 300 clientes atendidos em todo o mundo e mais de 1 bilhão de pessoas impactadas pelo nosso trabalho. Fale conosco!" />
 
         <meta name="robots" content="all" />
@@ -58,15 +57,21 @@ export default function Header () {
     </Nav.Link>
     </Link>
 
+    <Link href="/produtos">
+    <Nav.Link as="a" href="/produtos">      
+        Produtos
+    </Nav.Link>
+    </Link>
+
     <Link href="/servicos">
     <Nav.Link as="a" href="/servicos">      
         Serviços
     </Nav.Link>
     </Link>
 
-    <Link href="/trabalhos">
-      <Nav.Link as="a" href="/trabalhos">      
-          Trabalhos
+    <Link href="/clientes">
+      <Nav.Link as="a" href="/clientes">      
+          Clientes
       </Nav.Link>
     </Link>
 
