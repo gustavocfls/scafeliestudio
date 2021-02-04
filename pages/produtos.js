@@ -12,12 +12,9 @@ export default function Produtos() {
         <Header />
 
         <Container className="header-page text-center">
-                 <h1 className="title-page">Produtos</h1>
-
-                <p>
-                    A Scafeli é uma Gestora e Produtora de Conteúdos Digitais fundada em 2014 pelo fotógrafo Gustavo Scafeli e com sede no Rio de Janeiro.
-                </p>
-
+            <h1 className="title-page">Produtos</h1>
+            <p>A Scafeli é uma Gestora e Produtora de Conteúdos Digitais.</p>
+            <i class="fas fa-arrow-down"></i>
         </Container>
 
         <Footer />

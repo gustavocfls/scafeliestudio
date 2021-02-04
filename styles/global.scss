@@ -97,30 +97,8 @@ img {
 }
 
 .service {
-  padding: 50px 0px;
-
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-
-    li {
-      list-style: none;
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
-      color: #777777;
-      margin-bottom: 10px;
-
-      i {
-        font-size: 14px;
-        color: #777777;
-        margin-right: 6px;
-      }
-    }
+  .service-item {
+    margin-bottom: 40px;
   }
 }
 
@@ -149,6 +127,9 @@ img {
   h2 {
     color: #ffffff;
     max-width: 600px;
+
+    &:after {
+    }
   }
   p {
     color: #ffffff;
@@ -227,6 +208,63 @@ img {
     color: #999;
     font-family: "Oswald", sans-serif;
     margin-bottom: 20px;
+  }
+}
+
+// SERVIÇOS PAGE
+.servicos-page {
+  .googlepartner {
+    margin-bottom: 50px;
+  }
+}
+
+// SOBRE PAGE
+.sobre-page {
+  .googlepartner {
+    margin-bottom: 50px;
+  }
+}
+
+// CLIENTES PAGE
+.clientes-page {
+  margin-bottom: 50px;
+
+  .cliente-item {
+    margin-bottom: 30px;
+
+    h2 {
+      margin-bottom: 0px;
+    }
+
+    p {
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    a {
+      color: #131313;
+      font-weight: 600;
+    }
+  }
+}
+
+// CONTATO PAGE
+.contato-page {
+  margin-bottom: 40px;
+
+  .googlepartner {
+    margin-bottom: 40px;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  .s-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
 

@@ -14,29 +14,31 @@ export default function Sobre() {
     return(<>
         <Header />
 
-        <Container className="header-page text-center">
-            
+        <div className="sobre-page">
+
+            <Container className="header-page text-center">            
                 <h1 className="title-page">Sobre a Scafeli</h1>
+                <p>A Scafeli é uma Agência de Publicidade e Marketing no Rio de Janeiro.</p>
+                <i class="fas fa-arrow-down"></i>
+            </Container>
 
-                <p>
-                    A Scafeli é uma Gestora e Produtora de Conteúdos Digitais fundada em 2014 pelo fotógrafo Gustavo Scafeli e com sede no Rio de Janeiro.
-                </p>
-        </Container>
+            <GooglePartner />
 
-        <GooglePartner />
+            <Container>
+                <Row>
+                    <Col md={6}>
+                        <h3>Nossa história</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac felis dignissim, semper justo vitae, lobortis lacus. Nam id urna sit amet nunc sodales sollicitudin. Aenean pellentesque nunc vel mattis sollicitudin. Morbi risus erat, aliquam eget scelerisque non, accumsan quis nisi. Cras fermentum tincidunt finibus. Phasellus commodo felis id ante fringilla, malesuada tincidunt velit condimentum. Pellentesque finibus nisi nisi, at laoreet ante sollicitudin eget.</p>
+                    </Col>
 
-        <Container>
-            <Row>
-                <Col md={6}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac felis dignissim, semper justo vitae, lobortis lacus. Nam id urna sit amet nunc sodales sollicitudin. Aenean pellentesque nunc vel mattis sollicitudin. Morbi risus erat, aliquam eget scelerisque non, accumsan quis nisi. Cras fermentum tincidunt finibus. Phasellus commodo felis id ante fringilla, malesuada tincidunt velit condimentum. Pellentesque finibus nisi nisi, at laoreet ante sollicitudin eget.</p>
-                </Col>
+                    <Col md={6}>
+                        <h3>Nossa visão</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac felis dignissim, semper justo vitae, lobortis lacus. Nam id urna sit amet nunc sodales sollicitudin. Aenean pellentesque nunc vel mattis sollicitudin. Morbi risus erat, aliquam eget scelerisque non, accumsan quis nisi. Cras fermentum tincidunt finibus. Phasellus commodo felis id ante fringilla, malesuada tincidunt velit condimentum. Pellentesque finibus nisi nisi, at laoreet ante sollicitudin eget.</p>
+                    </Col>
+                </Row>
+            </Container>
 
-                <Col md={6}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac felis dignissim, semper justo vitae, lobortis lacus. Nam id urna sit amet nunc sodales sollicitudin. Aenean pellentesque nunc vel mattis sollicitudin. Morbi risus erat, aliquam eget scelerisque non, accumsan quis nisi. Cras fermentum tincidunt finibus. Phasellus commodo felis id ante fringilla, malesuada tincidunt velit condimentum. Pellentesque finibus nisi nisi, at laoreet ante sollicitudin eget.</p>
-                    
-                </Col>
-            </Row>
-        </Container>
+        </div>
 
 
        <Cta />

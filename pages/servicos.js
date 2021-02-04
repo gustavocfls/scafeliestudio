@@ -15,64 +15,82 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Servicos() {
     return(<>
+
         <Header />
 
+        <div className="servicos-page">
 
         <Container className="header-page text-center">
-            
-                
-                <h1 className="title-page">Nossos serviços</h1>
-
-                <p>
-                    A Scafeli é uma Gestora e Produtora de Conteúdos Digitais fundada em 2014 pelo fotógrafo Gustavo Scafeli e com sede no Rio de Janeiro.
-                </p>
-            
+            <h1 className="title-page">Serviços</h1>
+            <p>A Scafeli é uma Gestora e Produtora de Conteúdos Digitais.</p>
+            <i class="fas fa-arrow-down"></i>
         </Container>
 
-
-
-
         <section className="service">
-        <Container>
+    
+            <Container>
         
-        
-        <Row className="align-items-center">
+            <Row className="align-items-center">
 
-            <Col md={4}>
-                <Image
-                    src="/supreme-scafeli.png"
-                    alt="Scafeli"
-                    width="1080"
-                    height="1080"
-                />
+                <Col md={4}>
 
-                <h2>Produção de conteúdo</h2>
-            </Col>
+                    <div className="service-item">
+                        <Image
+                            src="/supreme-scafeli.png"
+                            alt="Scafeli"
+                            width="1080"
+                            height="1080"
+                        />
+                        <h2>Produção de conteúdo</h2>
 
-            <Col md={4}>
-                <Image
-                    src="/supreme-scafeli.png"
-                    alt="Scafeli"
-                    width="1080"
-                    height="1080"
-                />
+                        <Link href="/sobre">
+                            <a className="s-link">      
+                                Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </Link>
+                    </div>
 
-                <h2>Sites e lojas virtuais</h2>
-            </Col>
+                </Col>
 
-            <Col md={4}>
-                <Image
-                    src="/supreme-scafeli.png"
-                    alt="Scafeli"
-                    width="1080"
-                    height="1080"
-                />
+                <Col md={4}>
 
-                <h2>Marketing de influência</h2>
-            </Col>
+                    <div className="service-item">
+                        <Image
+                            src="/supreme-scafeli.png"
+                            alt="Scafeli"
+                            width="1080"
+                            height="1080"
+                        />
+                        <h2>Produção de conteúdo</h2>
+                        <Link href="/sobre">
+                            <a className="s-link">      
+                                Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </Link>
+                    </div>
 
-            
-        </Row>
+                </Col>
+
+                <Col md={4}>
+                <div className="service-item">
+                    <Image
+                        src="/supreme-scafeli.png"
+                        alt="Scafeli"
+                        width="1080"
+                        height="1080"
+                    />
+
+                    <h2>Produção de conteúdo</h2>
+                    <Link href="/sobre">
+                            <a className="s-link">      
+                                Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </Link>
+                    </div>
+                </Col>
+
+                
+            </Row>
 
         </Container>
     </section>
@@ -88,6 +106,7 @@ export default function Servicos() {
         <Row className="align-items-center">
 
             <Col md={4}>
+            <div className="service-item">
                 <Image
                     src="/supreme-scafeli.png"
                     alt="Scafeli"
@@ -95,10 +114,17 @@ export default function Servicos() {
                     height="1080"
                 />
 
-                <h2>Produção Audiovisual</h2>
+                <h2>Produção de conteúdo</h2>
+                <Link href="/sobre">
+                    <a className="s-link">      
+                        Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i>
+                    </a>
+                </Link>
+                </div>
             </Col>
 
             <Col md={4}>
+            <div className="service-item">
                 <Image
                     src="/supreme-scafeli.png"
                     alt="Scafeli"
@@ -106,10 +132,17 @@ export default function Servicos() {
                     height="1080"
                 />
 
-                <h2>Criação de aplicativos</h2>
+                <h2>Produção de conteúdo</h2>
+                <Link href="/sobre">
+                    <a className="s-link">      
+                        Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i>
+                    </a>
+                </Link>
+                </div>
             </Col>
 
             <Col md={4}>
+            <div className="service-item">
                 <Image
                     src="/supreme-scafeli.png"
                     alt="Scafeli"
@@ -117,7 +150,13 @@ export default function Servicos() {
                     height="1080"
                 />
 
-                <h2>Gestão de anúncios</h2>
+                <h2>Produção de conteúdo</h2>
+                <Link href="/sobre">
+                    <a className="s-link">      
+                        Saiba mais sobre a Scafeli <i class="fas fa-arrow-right"></i>
+                    </a>
+                </Link>
+                </div>
             </Col>
 
             
@@ -125,6 +164,8 @@ export default function Servicos() {
 
         </Container>
     </section>
+
+    </div>
 
     <Cta />
 
