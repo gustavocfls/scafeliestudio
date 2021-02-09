@@ -4,25 +4,21 @@ import Link from 'next/link'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import Cta from '../components/Cta';
-import GooglePartner from '../components/googlepartner';
 
 import { Container, Row, Col } from 'react-bootstrap'
 
 
-export default function Sobre() {
+export default function About() {
     return(<>
         <Header />
 
         <div className="sobre-page">
 
-            <Container className="header-page text-center">            
-                <h1 className="title-page">Sobre a Scafeli</h1>
-                <p>A Scafeli é uma Agência de Publicidade e Marketing no Rio de Janeiro.</p>
-                <i class="fas fa-arrow-down"></i>
+            <Container className="header-page">            
+                <h1 className="title-page">About Me</h1>
+                <p>Hey, I’m Gustavo. I'm a developer, consultant, and the creator of Projeto Med and React 2025.</p>
             </Container>
 
-            <GooglePartner />
 
             <Container>
                 <Row>
@@ -41,7 +37,6 @@ export default function Sobre() {
         </div>
 
 
-       <Cta />
 
        <Footer />
 

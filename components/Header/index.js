@@ -7,8 +7,8 @@ import { Nav, Navbar, Container, Row, Col, Button, Badge } from 'react-bootstrap
 export default function Header () {
     return (<>
 
-    <Head>z\
-        <title>Scafeli ─ Agência de Publicidade e Marketing no Rio de Janeiro</title>
+    <Head>
+        <title>Gustavo Souza - Software Developer</title>
         <meta name="description" content="Desde 2014, já são mais de 300 clientes atendidos em todo o mundo e mais de 1 bilhão de pessoas impactadas pelo nosso trabalho. Fale conosco!" />
 
         <meta name="robots" content="all" />
@@ -26,13 +26,13 @@ export default function Header () {
     <header>
 
 <Container>
-    <Navbar collapseOnSelect expand="lg" variant="dark" >
+    <Navbar collapseOnSelect expand="lg" variant="light" >
       <Navbar.Brand href="/" className="mr-auto">
           <Image
-                src="/svg/logo-scafeli.svg"
+                src="/svg/logo.svg"
                 alt="Scafeli"
-                width="180"
-                height="40"
+                width="80"
+                height="50"
             />
         </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -51,34 +51,28 @@ export default function Header () {
     </Nav.Link>
     </Link>
 
-    <Link href="/sobre">
-    <Nav.Link as="a" href="/sobre">      
-        Sobre
+    <Link href="/about">
+    <Nav.Link as="a" href="/about">      
+        About
     </Nav.Link>
     </Link>
 
-    <Link href="/produtos">
-    <Nav.Link as="a" href="/produtos">      
-        Produtos
+    <Link href="/projects">
+    <Nav.Link as="a" href="/projects">      
+        Projects
     </Nav.Link>
     </Link>
 
-    <Link href="/servicos">
-    <Nav.Link as="a" href="/servicos">      
-        Serviços
+    <Link href="/blog">
+    <Nav.Link as="a" href="/blog">      
+        Blog
     </Nav.Link>
     </Link>
 
-    <Link href="/clientes">
-      <Nav.Link as="a" href="/clientes">      
-          Clientes
-      </Nav.Link>
-    </Link>
 
-
-    <Link href="/contato">
-    <Nav.Link as="a" href="/contato">      
-        Contato
+    <Link href="/contact">
+    <Nav.Link as="a" href="/contact">      
+        Get in touch
     </Nav.Link>
     </Link> 
 

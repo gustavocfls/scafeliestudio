@@ -7,10 +7,9 @@ import Footer from '../components/Footer';
 
 
 import { Container, Row, Col } from 'react-bootstrap'
-import GooglePartner from '../components/googlepartner';
 
 
-export default function Contato() {
+export default function Contact() {
     return(<>
 
     <Head>
@@ -27,7 +26,6 @@ export default function Contato() {
                 <i class="fas fa-arrow-down"></i>
         </Container>
 
-        <GooglePartner />
 
         <Container>
             <Row>

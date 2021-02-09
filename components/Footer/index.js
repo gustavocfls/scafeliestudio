@@ -11,6 +11,8 @@ export default function Footer () {
 <footer>
         <Container className="text-center">
 
+            <p>Eu sou mais legal nas redes sociais</p>
+
             <ul>
                 <li><a target="_blank" href="https://instagram.com/agenciascafeli"><i class="fab fa-instagram"></i></a></li>
                 <li><a target="_blank" href="http://be.net/agenciascafeli"><i class="fab fa-behance"></i></a></li>
@@ -19,9 +21,7 @@ export default function Footer () {
             </ul>
 
 
-            <p>Scafeli ─ Publicidade e Marketing</p>
-            <p>Copyright © Todos os direitos reservados.</p>
-            <p>Feito com ❤️ por nós :)</p>
+            <p>Feito com ❤️ por mim :)</p>
             
         </Container>
     </footer>
