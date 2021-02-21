@@ -1,88 +1,33 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
 
-import { Nav, Navbar, Container, Row, Col, Button, Badge } from 'react-bootstrap'
+import { Container } from "react-bootstrap";
 
-export default function Header () {
-    return (<>
-
-    <Head>
-        <title>Gustavo Souza - Software Developer</title>
-        <meta name="description" content="Desde 2014, já são mais de 300 clientes atendidos em todo o mundo e mais de 1 bilhão de pessoas impactadas pelo nosso trabalho. Fale conosco!" />
+export default function Header() {
+  return (
+    <>
+      <Head>
+        <title>adidas® Superstar por Gustavo Scafeli</title>
+        <link rel="shortcut icon" href="/logo.png" />
+        <meta
+          name="description"
+          content="Desde 2014, já são mais de 300 clientes atendidos em todo o mundo e mais de 1 bilhão de pessoas impactadas pelo nosso trabalho. Fale conosco!"
+        />
 
         <meta name="robots" content="all" />
-
         <meta content="pt_BR" property="og:locale" />
+      </Head>
 
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:title" content="Scafeli" key="title" />
-
-        <link href="https://www.scafeli.com.br" rel="canonical" />
-        <link href="https://www.scafeli.com.br" rel="home" />
-    </Head>
-
-
-    <header>
-
-<Container>
-    <Navbar collapseOnSelect expand="lg" variant="light" >
-      <Navbar.Brand href="/" className="mr-auto">
+      <header className="text-center">
+        <Container>
           <Image
-                src="/svg/logo.svg"
-                alt="Scafeli"
-                width="80"
-                height="50"
-            />
-        </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-
-
-   
-      
-    </Nav>
-    <Nav>
-
-    <Link href="/">
-    <Nav.Link as="a" href="/">      
-        Home
-    </Nav.Link>
-    </Link>
-
-    <Link href="/about">
-    <Nav.Link as="a" href="/about">      
-        About
-    </Nav.Link>
-    </Link>
-
-    <Link href="/projects">
-    <Nav.Link as="a" href="/projects">      
-        Projects
-    </Nav.Link>
-    </Link>
-
-    <Link href="/blog">
-    <Nav.Link as="a" href="/blog">      
-        Blog
-    </Nav.Link>
-    </Link>
-
-
-    <Link href="/contact">
-    <Nav.Link as="a" href="/contact">      
-        Get in touch
-    </Nav.Link>
-    </Link> 
-
-
-</Nav>
-</Navbar.Collapse>
-</Navbar>
-
-</Container>
-</header>
-
-    </>);
+            src="/logo.png"
+            width="80"
+            height="80"
+            alt="adidas® Superstar"
+          />
+        </Container>
+      </header>
+    </>
+  );
 }

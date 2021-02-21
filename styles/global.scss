@@ -1,20 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
-body {
-  margin: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  font-size: 100%;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #333333;
-}
-
-$primary-color: #107fd2;
-
 a {
-  color: $primary-color;
-
   &:hover {
     text-decoration: none;
   }
@@ -38,26 +24,19 @@ img {
   padding-top: 40px;
 
   h1 {
-    letter-spacing: 1px;
     color: #131313;
-    margin-top: 0px;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 60px;
   }
 
-  p {
-    color: #777777;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    margin-left: 5px;
+  img {
+    border-radius: 10px;
   }
 }
 
 footer {
-  background-color: #131313;
+  background-color: #f2f2f2;
   padding: 50px 0px;
-  color: #777777;
+  color: #585858;
 
   ul {
     margin: 0;
@@ -67,14 +46,10 @@ footer {
       list-style: none;
       display: inline-block;
       a {
-        color: #585858;
+        color: #777777;
         font-size: 20px;
         padding: 15px;
         transition: all ease 0.3s;
-
-        &:hover {
-          color: #fff;
-        }
       }
     }
   }
